@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@import url(reset.css);
+/*
+基本設定を記述
+*/
+body {
+  width: auto; }
