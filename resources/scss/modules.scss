@@ -1,7 +1,11 @@
+@import "app.scss";
 
-
-.fontawesome-color{
+.main-color{
     color: $main-color;
+}
+
+.sub-color{
+    color: $sub-font-color;
 }
 
 .flex{

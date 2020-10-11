@@ -2,8 +2,11 @@
 /*
 基本設定を記述
 */
-.fontawesome-color {
+.main-color {
   color: #419a1c; }
+
+.sub-color {
+  color: #fff; }
 
 .flex {
   display: flex; }

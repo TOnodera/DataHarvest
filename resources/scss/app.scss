@@ -2,6 +2,10 @@
 基本設定を記述
 */
 
+//サイト幅
+//pc
+$pc_width: 1000px;
+
 //サイトの基本配色設定
 $main-color: #419a1c;
 $sub-color:#000;
@@ -9,5 +13,5 @@ $accent-color:#00f;
 
 //サイトの文字に基本配色設定
 $main-font-color: #000;
-$sub-font-color: #000;
+$sub-font-color: #fff;
 $accent-font-color: #f00;
