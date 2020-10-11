@@ -311,6 +311,11 @@ body {
   color: #000;
   font-size: 1.4rem; }
 
+a {
+  text-decoration: none; }
+  a:link, a:visited, a:hover, a:active, a:focus {
+    color: #000; }
+
 nav.pc {
   height: 100px;
   box-shadow: 5px 0px 2px 2px #419a1c;
