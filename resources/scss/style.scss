@@ -1,8 +1,53 @@
-@import "reset.css";
+@import "reset.scss";
 @import "app.scss";
 @import "modules.scss";
 
+html { 
+    font-size: 62.5%;
+}
 
 body{
-    width: auto;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100vh;
+    color: $main-font-color;
+    font-size: 1.4rem;
+}
+
+nav.pc{
+    height: 100px;
+    box-shadow: 5px 0px 2px 2px $main-color;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    .nav-item{
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 30px;
+        margin-left: 30px;
+        .logo{
+            height: 80px;
+        }
+        .items{
+            box-sizing: border-box;
+            height: 50px;
+            margin-right: 10px;
+            margin-top: 25px;
+            text-align: center;
+            p{
+                margin-top: 5px;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
 }
