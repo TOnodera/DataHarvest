@@ -56,13 +56,14 @@ header{
     }
 }
 
-
+//topページ
 .main-contents{
     margin-top: 150px;
     img{
         width: 100%;
     }
     .contents-container{
+        //トップページ
         .introduction{
             margin-bottom: 50px;
             h1{
@@ -73,6 +74,7 @@ header{
                 border-left: 10px solid $main-color;
             }
         }
+        //一覧ページ
         .list-introduction{
             @extend .introduction;
             h1{
@@ -80,6 +82,59 @@ header{
                 padding-left: 0;
                 i{
                     margin-right: 5px;
+                }
+            }
+        }
+        //コンタクトフォーム
+        .contact-form{
+            margin-top: 25px;
+            .form-grid{
+                display: grid;
+                grid-gap: 10px;
+                grid-template-rows: 30px 30px 1fr 30px;
+                grid-template-columns: 120px 1fr;
+                .form-label{
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    align-self: center;
+                }
+                .form-value{
+                    input{
+                        border: 1px solid $main-color;
+                        border-radius: 5px;
+                        font-size: 1.9rem;
+                        width: 50%;
+                        &:focus{
+                            border:2px solid $main-color;
+                        }
+                    }
+                    textarea{
+                        border: 1px solid $main-color;
+                        border: 1px solid $main-color;
+                        border-radius: 5px;
+                        width: 100%;
+                        height: 200px;
+                        &:focus{
+                            border:2px solid $main-color;
+                        }
+                    }             
+                }
+                .confirm-button{
+                    grid-column: 2/2;
+                    text-align: center;
+                    button{
+                        background-color: $main-color;
+                        box-shadow: 2px 2px 2px 2px desaturate($main-color, 20%);
+                        &:hover{
+                            background-color: saturate($main-color,15%);
+                        }
+                        &:focus{
+                            box-shadow: 0 0 0 0 $main-color;
+                        }
+                        color: $sub-font-color;
+                        font-weight: bold;
+                        padding: 10px;
+                    }
                 }
             }
         }

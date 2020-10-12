@@ -46,6 +46,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none; }
+
+textarea {
+  resize: vertical; }
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none; }
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer; }
+
+select::-ms-expand {
+  display: none; }
+
 /*
 基本設定を記述
 */
@@ -371,6 +401,45 @@ header {
       padding-left: 0; }
       .main-contents .contents-container .list-introduction h1 i {
         margin-right: 5px; }
+    .main-contents .contents-container .contact-form {
+      margin-top: 25px; }
+      .main-contents .contents-container .contact-form .form-grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 30px 30px 1fr 30px;
+        grid-template-columns: 120px 1fr; }
+        .main-contents .contents-container .contact-form .form-grid .form-label {
+          font-weight: bold;
+          font-size: 1.5rem;
+          align-self: center; }
+        .main-contents .contents-container .contact-form .form-grid .form-value input {
+          border: 1px solid #419a1c;
+          border-radius: 5px;
+          font-size: 1.9rem;
+          width: 50%; }
+          .main-contents .contents-container .contact-form .form-grid .form-value input:focus {
+            border: 2px solid #419a1c; }
+        .main-contents .contents-container .contact-form .form-grid .form-value textarea {
+          border: 1px solid #419a1c;
+          border: 1px solid #419a1c;
+          border-radius: 5px;
+          width: 100%;
+          height: 200px; }
+          .main-contents .contents-container .contact-form .form-grid .form-value textarea:focus {
+            border: 2px solid #419a1c; }
+        .main-contents .contents-container .contact-form .form-grid .confirm-button {
+          grid-column: 2/2;
+          text-align: center; }
+          .main-contents .contents-container .contact-form .form-grid .confirm-button button {
+            background-color: #419a1c;
+            box-shadow: 2px 2px 2px 2px #49882e;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px; }
+            .main-contents .contents-container .contact-form .form-grid .confirm-button button:hover {
+              background-color: #3ba80e; }
+            .main-contents .contents-container .contact-form .form-grid .confirm-button button:focus {
+              box-shadow: 0 0 0 0 #419a1c; }
     .main-contents .contents-container .heading2 {
       font-size: 2rem;
       font-weight: bold;
