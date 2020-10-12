@@ -358,14 +358,19 @@ header {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 200px 1fr; }
-    .main-contents .contents-container .introduction {
+    .main-contents .contents-container .introduction, .main-contents .contents-container .list-introduction {
       margin-bottom: 50px; }
-      .main-contents .contents-container .introduction h1 {
+      .main-contents .contents-container .introduction h1, .main-contents .contents-container .list-introduction h1 {
         font-size: 2.5rem;
         font-weight: bold;
         margin: 0 0 10px 0;
         padding-left: 10px;
         border-left: 10px solid #419a1c; }
+    .main-contents .contents-container .list-introduction h1 {
+      border-left: none;
+      padding-left: 0; }
+      .main-contents .contents-container .list-introduction h1 i {
+        margin-right: 5px; }
     .main-contents .contents-container .heading2 {
       font-size: 2rem;
       font-weight: bold;
