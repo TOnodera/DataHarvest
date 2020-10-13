@@ -2,11 +2,10 @@
 
 @section('contents')
 <div class="introduction">
-    <h1>Data hervest</h1>
-    <p>このサイト統計情報の可視化を目的に作成しています。政府統計情報を元にしたデータを中心に掲載してあります。</p>
+    <h1>生活</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates?</p>
 </div>
 
-<h2 class="heading2">New</h2>
 <div class="items">
 
     <div class="item">
